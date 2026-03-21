@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Sky Blue — 60/30/10 Design System ── */
+
+  /* 10% — Primary accent (buttons, brand, CTAs) */
+  --color-primary:        #0EA5E9;   /* Sky-500 */
+  --color-primary-dark:   #0284C7;   /* Sky-600 — hover */
+  --color-secondary:      #38BDF8;   /* Sky-400 */
+  --color-secondary-dark: #0369A1;   /* Sky-700 */
+  --color-accent:         #BAE6FD;   /* Sky-200 */
+  --color-navy:           #0369A1;
+
+  /* 60% — Dominant neutral surfaces */
+  --color-page:    #FFFFFF;
+  --color-card:    #FFFFFF;
+
+  /* 30% — Secondary tinted surfaces */
+  --color-section: #F0F9FF;   /* Sky-50 — subtle section bg */
+
+  /* Borders */
+  --color-rim:   #E0F2FE;   /* Sky-100 */
+  --color-field: #BAE6FD;   /* Sky-200 */
+
+  /* Text */
+  --color-ink: #0F172A;
+  --color-sub: #334155;
+  --color-dim: #64748B;
+
+  /* Status */
+  --color-ok:  #059669;
+  --color-err: #DC2626;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #FFFFFF;
+  color: #0F172A;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: #0EA5E9;
+  color: white;
+}
